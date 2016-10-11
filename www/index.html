@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+        <meta name="app-mobile-web-app-capable" content="yes" />
+        <title>CSCI @ AUM</title>
+        
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <style>
+            * {
+                -webkit-touch-callout:none
+            }
+        </style>
+
+        
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"
+        ></script>
+
+    </head>
+    
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+        
+        <div data-role="page" id="home" data-theme="b">
+            <div data-role="header">
+                <h1>Computer Science @ AUM</h1>
+            </div><!-- /header -->
+            <div data-role="main" class="ui-content">
+                <div style="text-align:center;">
+                    <img src="img/AUM_schoolname_rev.png" responsive />
+                </div>
+                <h2 style="text-align:center;">Hi, I'm Jason. Welcome to Computer Science at AUM!</h2>
+            </div><!-- /main -->
+            <div data-role="footer" data-id="menu" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home" data-iconpos="bottom" 
+                            class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#faq" data-icon="info" data-iconpos="bottom"
+                            data-transition="slide">FAQ</a></li>
+                        <li><a href="#faves" data-icon="star" data-iconpos="bottom"
+                            data-transition="slide">Favorite Courses</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+        </div><!-- /page "home" -->
+
+        <div data-role="page" id="faq" data-theme="b">
+            <div data-role="header">
+                <h1>FAQ</h1>
+            </div><!-- /header -->
+            <div data-role="main" class="ui-content">
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible">
+                        <h1>What will I learn?</h1>
+                        <p>Just about everything Computers, from machine-level math to cloud computing.</p>
+                    </div><!-- /collapsible -->
+                    <div data-role="collapsible">
+                        <h1>What languages will I use?</h1>
+                        <p>Standards are always changing, especially in the mobile realm. So far, I have been exposed to C, C++, Java, Python, shell scripting, a few CAS languages, SQL, and a host of web- and mobile-development languages.</p>
+                    </div><!-- /collapsible -->
+                    <div data-role="collapsible">
+                        <h1>Is it hard?</h1>
+                        <p>Of course it is, but it's rewarding in equal measure. You will begin to think differently, and by the end, when you start to choose which languages best fit your objective, you will realize just how far you've come.</p>
+                    </div><!-- /collapsible -->
+                    <div data-role="collapsible">
+                        <h1>What about the faculty?</h1>
+                        <p>The faculty are the best around; intelligent, wise, supportive, attentive, and truly caring of whether you succeed. If you're willing to put in the time and the effort, you're guaranteed to get where you want to be!</p>
+                    </div><!-- /collapsible -->
+                    <div data-role="collapsible">
+                        <h1>Is it expensive?</h1>
+                        <p>I'd prefer not to discuss such things. See Financial Aid or whoever and make that determination for yourself.</p>
+                    </div><!-- /collapsible -->
+                </div><!-- /collapsibleset -->
+            </div><!-- /main -->
+            <div data-role="footer" data-id="menu" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home" data-iconpos="bottom"
+                            data-transition="slide" data-direction="reverse">Home</a></li>
+                        <li><a href="#faq" data-icon="info" data-iconpos="bottom" 
+                            class="ui-btn-active ui-state-persist">FAQ</a></li>
+                        <li><a href="#faves" data-icon="star" data-iconpos="bottom"
+                            data-transition="slide">Favorite Courses</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+        </div><!-- /page "faq" -->
+  
+        <div data-role="page" id="faves" data-theme="b">
+            <div data-role="header">
+                <h1>Favorite Courses</h1>
+            </div><!-- /header -->
+            <div data-role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#c1popup" data-rel="popup" class="ui-content"
+                        data-position-to="window"
+                        data-transition="pop">CSCI 4500 - Mobile Computing</a>
+                        <div data-role="popup" id="c1popup">
+                            <a href="#" data-rel="back" data-role="button" data-theme="b"
+                                data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
+                            <p>Modern web and mobile programming techniques. A high-powered course that expects you to learn quickly and well to stay on the razor's edge of the fresh and rapidly-growing mobile software development industry.</p>
+                            <p>This course will expect you to adopt flexible HTML5/CSS/JavaScript functionality, then focus on multi-platform app development using a wide variety of popular CSS and JavaScript libraries. This was developed using JQuery Mobile!</p>
+                            <p>The final objective of this course is to, along with a partner, produce and publish a mobile app in at least two app stores!</p>
+                        </div>
+                    </li>
+                    <li><a href="#c2popup" data-rel="popup" class="ui-content"
+                        data-position-to="window" data-transition="pop">
+                        CSCI 3600 - Algorithm Design and Analysis</a>
+                        <div data-role="popup" id="c2popup">
+                            <a href="#" data-rel="back" data-role="button" data-theme="b"
+                                data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
+                            <p>The gears behind the screen -- Learn how 0s and 1s can be used to accomplish just about any task. Everyone knows that computers are versatile, but how do they get that way?</p>
+                            <p>Algorithm Design is all about sorting, shuffling, arithmetic... the basic building blocks of the functions and routines that make our computers so flexible. Learn how to design your own algorithms that not only perform, but do so efficiently.</p>
+                            <p>A focus on lower-level program design offers something for anyone. Even if you only ever end up using pre-existing libraries in the future, an understanding of how they do what they do will definitely make your job easier.</p>
+                        </div>
+                    </li>
+                    <li><a href="#c3popup" data-rel="popup" class="ui-content"
+                        data-position-to="window" data-transition="pop">
+                        MATH 4400 - Math Models & Simulations</a>
+                        <div data-role="popup" id="c3popup">
+                            <a href="#" data-rel="back" data-role="button" data-theme="b"
+                                data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
+                            <p>Use Algebra and Calculus to solve everyday problems and make predictions about the future based on statistical data.</p>
+                            <p>Yep, a math class had to be somewhere on here... this one is really cool though. For all the people that sit in Calculus and wonder, "when am I ever going to use this?" Math Models & Sims is the link between all those math courses you have to take and computers. Using various line-fitting strategies and CAS to aid in computation, you will learn the basics behind things like population models and sales projections. The midterm project involved producing an impressive purchasing model for a business.</p>
+                            <p>This is one of those classes that continues to tickle at the back of your mind long after you've taken it, at unexpected times in everyday life. Good stuff.</p>
+                        </div>
+                    </li>
+                    <li><a href="#c4popup" data-rel="popup" class="ui-content"
+                        data-position-to="window" data-transition="pop">
+                        CSCI 3100 - Unix and C</a>
+                        <div data-role="popup" id="c4popup">
+                            <a href="#" data-rel="back" data-role="button" data-theme="b"
+                                data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
+                            <p>Been using Windows your whole life? Tired of all the extra "features" that are forced upon you in mainstream operating systems today? There's another option, and it just might be for you!</p>
+                            <p>Unix has been around for ages, and still maintains a strong following in just about every sector. There are a ton of reasons why, and in this course, you will receive guidance from start to finish on an exploratory journey through Linux, a popular modern descendent of the original Unix. Get comfortable with the command line, text editors, scripting basics, and everything you need to shift your work environment into Linux! The best part is that you don't even have to give up your old operating system, as many Linux distributions can be booted from a USB flash drive.</p>
+                            <p>This course is a bit daunting at first, and there are many things that come up that don't seem to make sense at first. I realized later that many of these things were a product of conditioning, and that unsurpassed flexibility is offered by the tools presented in this course. For me, it was well worth the move. I don't think I've booted into Windows in six months.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#c5popup" data-rel="popup" class="ui-content"
+                            data-position-to="window" data-transition="pop">
+                            CSCI 3700 - Database Systems</a>
+                        <div data-role="popup" id="c5popup">
+                            <a href="#" data-rel="back" data-role="button" data-theme="b"
+                                data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
+                            <p>Learn how data is stored and organized in a typical SQL database. Creation, modification, and querying of databases provides a cursory understanding of how you can store and manipulate your own data for just about any purpose, from video games to managing a shipping company.</p>
+                            <p>The skills gained in class can easily score you a job. A friend of mine recently graduated with a Math degree (CSCI concentration), and was actually told that if he had any SQL experience at all, he would've been a dead-ringer for the job. Once the foundation is laid, you can create your own personal databases for anything you can think of!</p>
+                            <p>My favorite thing about this class was when I had to produce a user-interface for an investment firm database that I built. This was the first time that I made a deliberate decision to use multiple programming languages for a single task. I created a menu system for the user with Java, which output a Python script that applied SQL commands to the database. This was a lot of fun, and an indication that some of this education had been sticking after all.</p>
+                        </div>
+                    </li>
+                </ul><!-- /listview -->
+            </div><!-- /main -->
+            <div data-role="footer" data-id="menu" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home" data-iconpos="bottom"
+                            data-transition="slide" data-direction="reverse">Home</a></li>
+                        <li><a href="#faq" data-icon="info" data-iconpos="bottom"
+                            data-transition="slide" data-direction="reverse">FAQ</a></li>
+                        <li><a href="#faves" data-icon="star" data-iconpos="bottom" 
+                            class="ui-btn-active ui-state-persist">Favorite Courses</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+        </div><!-- /page "faves" -->
+
+    </body>
+</html>
