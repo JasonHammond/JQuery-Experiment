@@ -9,5 +9,5 @@ A mobile experiment made from a homework assignment
     </author>
     <content src="index.html" />
     <access origin="*" />
-
+    <engine name="android" spec="~5.2.2" />
 </widget>
